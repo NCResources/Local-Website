@@ -9,9 +9,30 @@
   </head>
 
   <body>
-    <div class="zip-warning" style="height:100vh;width:100vw;position:fixed;top:0;left:0;background:#000;display:flex;justify-content:center;align-items:center;font-size:7vw;color:#f00;z-index:999;text-shadow:#f00 0 0 10px;font-family: 'Roboto', sans-serif;font-weight: bolder;">YOU FORGOT TO UNZIP!!!</div>
+    <div
+      class="zip-warning"
+      style="
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 7vw;
+        color: #f00;
+        z-index: 999;
+        text-shadow: #f00 0 0 10px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+      "
+    >
+      YOU FORGOT TO UNZIP!!!
+    </div>
     <header>
-      <version><button onclick="cloak()">Cloak</button> Beta</version>
+      <version><button onclick="cloak()">Cloak</button> <a href="credits.html">Credits</a></version>
 
       <center>
         <h style="font-size: 1.7vw">The Lobby</h>
@@ -19,14 +40,14 @@
 
       <div
         class="fakeA iFrame"
-        style="top:calc(0.5vw-3px);font-family:MaterialSymbolsOutlined"
+        style="top: calc(0.5vw-3px); font-family: MaterialSymbolsOutlined"
         onclick="toggleFullscreen()"
       >
         open_in_full
       </div>
       <div
         class="fakeA online"
-        style="top: calc(1.2vw - 3px);"
+        style="top: calc(1.2vw - 3px)"
         onclick="window.location.href='https://github.com/NCSources0/Local-Gamesite/archive/refs/heads/main.zip'"
       >
         Download
@@ -35,7 +56,9 @@
 
     <div id="grid-container">
       <div
-        style="background-image: url(games/cookie-clicker/img/perfectCookie.png)"
+        style="
+          background-image: url(games/cookie-clicker/img/perfectCookie.png);
+        "
         onclick="openGame('cookie-clicker/index.html')"
         id="grid-item"
       >
@@ -51,7 +74,9 @@
       </div>
 
       <div
-        style="background-image: url(games/hextris/images/icons/transparent.svg)"
+        style="
+          background-image: url(games/hextris/images/icons/transparent.svg);
+        "
         onclick="openGame('hextris/index.html')"
         id="grid-item"
       >
@@ -71,7 +96,7 @@
         onclick="openGame('tetris.html')"
         id="grid-item"
       >
-        Tetris
+        Javascript Tetris
       </div>
 
       <div
@@ -87,7 +112,7 @@
         onclick="openGame('snake/index.html')"
         id="grid-item"
       >
-        Snake
+        Javascript Snake
       </div>
 
       <div
@@ -114,12 +139,12 @@
         Katamari!
       </div>
       <div
-      style="background-image: url(img/n-gon.png)"
-      onclick="openGame('n-gon/index.html')"
-      id="grid-item"
-    >
-      n-gon
-    </div>
+        style="background-image: url(img/n-gon.png)"
+        onclick="openGame('n-gon/index.html')"
+        id="grid-item"
+      >
+        n-gon
+      </div>
     </div>
 
     <script src="script.js"></script>
