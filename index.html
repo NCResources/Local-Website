@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <div class="zip-warning" style="height:100vh;width:100vw;position:fixed;top:0;left:0;background:#000;display:flex;justify-content:center;align-items:center;font-size:7vw;color:#f00;z-index:999;text-shadow:#f00 0 0 10px;font-family: 'Roboto', sans-serif;font-weight: bolder;">YOU FORGOT TO UNZIP!!!</div>
     <header>
       <version><button onclick="cloak()">Cloak</button> Beta</version>
 
@@ -112,6 +113,13 @@
       >
         Katamari!
       </div>
+      <div
+      style="background-image: url(img/n-gon.png)"
+      onclick="openGame('n-gon/index.html')"
+      id="grid-item"
+    >
+      n-gon
+    </div>
     </div>
 
     <script src="script.js"></script>
